@@ -1,0 +1,532 @@
+/**********************************************************************
+* リセットCSS
+************************************************************************/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+img {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+a {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+/****************************************************************************************************
+* フォント設定
+***************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+.ja{
+	font-family: 'Kaisei Decol', serif;
+}
+.en{
+  font-family: 'Architects Daughter', cursive;
+}
+.en2{
+  font-family: 'Cookie', cursive;
+}
+/*****************************************************************************************
+* body カラー
+*******************************************************************************************/
+body{
+	background-color:#dbdbdb;
+}
+/******************************************************************************************
+* ヘッダー
+*******************************************************************************************/
+header{
+	width:100%;
+	position:relative;
+	height:90px;
+}
+.head-title{
+	text-align: center;
+	margin-top:10px;
+}
+.home-img{
+	width:80px;
+	cursor:pointer;
+}
+.head-title-name{
+	font-size:18px;
+}
+.menu-btn{
+	position:absolute;
+	top:20px;
+	left:80px;
+	z-index:50;
+}
+.modal-open-back{
+	width:100%;
+	height:100vh;
+	position:absolute;
+	top:0px;
+	z-index:85;
+	background-color:rgb(80, 80, 80);
+	opacity:0.5;
+	display:none;
+}
+.modal-open-color{
+	opacity:0.7;
+}
+.modal{
+	position:relative;
+	top:-51px;
+	background-color:black;
+	width:400px;
+	height:500px;
+	border-top-right-radius:30px;
+	border-bottom-right-radius:30px;
+	display:none;
+	z-index:90;
+}
+.modalbtn{
+	color:white;
+	font-size:40px;
+	font-weight:bold;
+	padding-top:30px;
+	padding-left:50px;
+	cursor:pointer;
+}
+
+.modal-title{
+	color:white;
+	padding-top:50px;
+	text-align: center;
+	font-size:18px;
+	border-bottom:solid 1px;
+	width:60%;
+	margin-left:30px;
+	cursor:pointer;
+}
+.modal-title span{
+	padding-left:60px;
+	font-size:14px;
+}
+.modal-concept{
+	color:white;
+	padding-top:25px;
+	font-size:18px;
+	text-align: center;
+	border-bottom:solid 1px;
+	width:60%;
+	margin-left:30px;
+	cursor:pointer;
+}
+.modal-concept span{
+	padding-left:35px;
+	font-size:14px;
+}
+.modal-works{
+	color:white;
+	padding-top:25px;
+	font-size:18px;
+	text-align: center;
+	border-bottom:solid 1px;
+	width:60%;
+	margin-left:30px;
+	cursor:pointer;
+}
+.modal-works span{
+	padding-left:55px;
+	font-size:14px;
+}
+.modal-flow{
+	color:white;
+	padding-top:25px;
+	font-size:18px;
+	text-align: center;
+	border-bottom:solid 1px;
+	width:60%;
+	margin-left:30px;
+	cursor:pointer;
+}
+.modal-flow span{
+	padding-left:70px;
+	font-size:14px;
+}
+.modal-contact{
+	color:white;
+	padding-top:25px;
+	font-size:18px;
+	text-align: center;
+	border-bottom:solid 1px;
+	width:60%;
+	margin-left:30px;
+	cursor:pointer;
+}
+.modal-contact span{
+	padding-left:40px;
+	font-size:14px;
+}
+.sns{
+	position:absolute;
+	top:30px;
+	right:10%;
+}
+.sns:hover{
+	cursor:pointer;
+}
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください***********/
+.openbtn9{
+	position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+	background:#dbdbdb;
+	cursor: pointer;
+	  width: 100px;
+	  height:50px;
+	border-radius: 5px;
+	overflow: hidden;/*ジャンプしてはみ出た要素を消す*/
+	z-index:100;
+  }
+  /*ボタン内側*/
+  .openbtn9 .openbtn-area{
+	  transition: all .4s;/*アニメーションの設定*/
+  }
+  .openbtn9 span{
+	  display: inline-block;
+	  transition: all .4s;/*アニメーションの設定*/
+	  position: absolute;
+	  left: 14px;
+	  height: 3px;
+	  border-radius: 2px;
+	background: black;
+	  width: 45%;
+	}
+  .openbtn9 span:nth-of-type(1) {
+	top:15px; 
+  }
+  .openbtn9 span:nth-of-type(2) {
+	top:23px;
+  }
+  .openbtn9 span:nth-of-type(3) {
+	top:31px;
+  }
+  /*activeクラスが付与されると .openbtn-areaが360度回転し、
+  その中の線のtopの位置や形状が変化して×に*/
+  .openbtn9.active .openbtn-area{
+	transform: rotateX(360deg);
+  }
+  .openbtn9.active span:nth-of-type(1) {
+	  top: 18px;
+	  left: 18px;
+	  transform: translateY(6px) rotate(-135deg);
+	  width: 30%;
+  }
+  .openbtn9.active span:nth-of-type(2) {
+	opacity: 0;
+  }
+  .openbtn9.active span:nth-of-type(3){
+	  top: 30px;
+	  left: 18px;
+	  transform: translateY(-6px) rotate(135deg);
+	  width: 30%;
+  }
+@media screen and (max-width:480px){
+  
+}
+/************************************************************************************************
+* first
+*************************************************************************************************/
+.first{
+	width:100%;
+	position:relative;
+	height:500px;
+}
+.first-main{
+	position:absolute;
+	padding-top:140px;
+	font-size:34px;
+	padding-left:240px;
+	font-weight:bold;
+	z-index:60;
+}
+.slider-pc{
+	position:absolute;
+	top:0px;
+	right:0px;
+	z-index:50;
+	width:75%;
+}
+.slider-sp{
+	display:none;
+}
+.first-img{
+	width:100%;
+}
+@media screen and (max-width:480px){
+  
+}
+/****************************************************************************************************
+* concept トップページ
+******************************************************************************************************/
+.concept{
+	margin-top:300px;
+	background-color:white;
+	height:500px;
+	position:relative;
+	width:100%;
+}
+.concept-img{
+	width:70%;
+	position:absolute;
+	top:-130px;
+	z-index:40;
+}
+.concept-content{
+	position:absolute;
+	width:450px;
+	height:450px;
+	background-color:white;
+	right:5%;
+	top:0px;
+	z-index:50;
+}
+.concept-title{
+	font-size:26px;
+	margin-left:50px;
+	margin-top:50px;
+}
+.concept-content p{
+	margin-left:50px;
+	margin-top:20px;
+	font-size:18px;
+}
+.concept-sub-title{
+	font-size:20px;
+	margin-left:50px;
+	margin-top:30px;
+	opacity:0.7;
+}
+@media screen and (max-width:480px){
+  
+}
+/*************************************************************************************
+* works トップページ
+****************************************************************************************/
+.works{
+	width:100%;
+	height:2200px;
+}
+.works-title{
+	text-align: center;
+	font-size:40px;
+	padding-top:100px;
+}
+.works img{
+	cursor:pointer;
+}
+.works img:hover{
+	opacity:0.7;
+	transition:0.5s;
+}
+.works-box1{
+	display:flex;
+	margin-top:80px;
+	width:100%;
+	position:relative;
+	height:400px;
+}
+.pc3{
+	width:850px;
+	box-shadow: 2px 2px 4px;
+}
+.works-box1 p{
+	width:300px;
+	height:300px;
+	background-color:white;
+	margin-left:-50px;
+	position:absolute;
+	top:100px;
+	left:800px;
+	text-align: center;
+	font-size:18px;
+	padding-top:100px;
+	font-weight:bold;
+	box-shadow: 2px 2px 4px;
+}
+.works-box2{
+	margin-top:80px;
+	width:100%;
+	height:400px;
+	position:relative;
+}
+.pc4{
+	box-shadow: -2px 2px 4px;
+	position:absolute;
+	right:0px;
+	width:850px;
+	z-index:50;
+	margin-left:auto;
+}
+.works-box2 p{
+	width:300px;
+	height:300px;
+	background-color:white;
+	position:absolute;
+	top:100px;
+	left:300px;
+	text-align: center;
+	font-size:18px;
+	padding-top:100px;
+	font-weight:bold;
+	box-shadow: -2px 2px 4px;
+	z-index:60;
+}
+.works-box3{
+	display:flex;
+	margin-top:80px;
+	width:100%;
+	position:relative;
+	height:400px;
+}
+.pc2{
+	width:850px;
+	box-shadow: 2px 2px 4px;
+}
+.works-box3 p{
+	width:300px;
+	height:300px;
+	background-color:white;
+	margin-left:-50px;
+	position:absolute;
+	top:100px;
+	left:800px;
+	text-align: center;
+	font-size:18px;
+	padding-top:100px;
+	font-weight:bold;
+	box-shadow: 2px 2px 4px;
+}
+.works-box4{
+	margin-top:80px;
+	width:100%;
+	height:400px;
+	position:relative;
+}
+.pc1{
+	box-shadow: -2px 2px 4px;
+	position:absolute;
+	right:0px;
+	width:850px;
+	z-index:50;
+	margin-left:auto;
+}
+.works-box4 p{
+	width:300px;
+	height:300px;
+	background-color:white;
+	position:absolute;
+	top:100px;
+	left:300px;
+	text-align: center;
+	font-size:18px;
+	padding-top:100px;
+	font-weight:bold;
+	box-shadow: -2px 2px 4px;
+	z-index:60;
+}
+@media screen and (max-width:480px){
+  
+}
+/*******************************************************************************************************
+* blog トップページ
+********************************************************************************************************/
+.blog{
+	width:100%;
+	height:500px;
+	text-align: center;
+}
+.blog-title{
+	font-size:40px;
+	margin-top:50px;
+}
+.blog-box{
+	margin:0 auto;
+	margin-top:50px;
+	width:800px;
+	height:250px;
+	background-color:white;
+	display:flex;
+	box-shadow: 0 0 8px gray;
+	cursor:pointer;
+}
+.blog-box:hover{
+	opacity:0.8;
+	transition:0.5s;
+}
+.pc6{
+	width:50%;
+}
+.blog-box p{
+	font-size:20px;
+	margin:auto;
+	text-align: left;
+}
+.blog-box p span{
+	font-size:18px;
+}
+@media screen and (max-width:480px){
+  
+}
+/***************************************************************************************************
+* footer トップページ
+*****************************************************************************************************/
+footer{
+	background-color:white;
+	width:100%;
+	height:300px;
+	text-align: center;
+	position:relative;
+}
+.footer-title{
+	padding-top:30px;
+}
+.footer-sns{
+	position:absolute;
+	top:40px;
+	right:150px;
+}
+.address{
+	padding-top:20px;
+	font-size:18px;
+}
+.footer-menu{
+	padding-top:50px;
+	font-size:22px;
+}
+.footer-menu:hover{
+	cursor:pointer;
+}
+.footer-menu span{
+	padding-left:30px;
+}
+@media screen and (max-width:480px){
+  
+}
