@@ -249,7 +249,77 @@ header{
 	  width: 30%;
   }
 @media screen and (max-width:480px){
-  
+	header{
+		height:120px;
+	}
+	.head-title{
+		margin-top:20px;
+	}
+	.home-img{
+		width:80px;
+	}
+	.head-title-name{
+		font-size:14px;
+	}
+	.menu-btn{
+		top:20px;
+		left:20px;
+	}
+	.modal{
+		width:300px;
+		height:350px;
+	}
+	.modalbtn{
+		font-size:30px;
+	}
+	.modal-title{
+		padding-top:30px;
+		font-size:14px;
+	}
+	.modal-title span{
+		font-size:10px;
+	}
+	.modal-concept{
+		padding-top:20px;
+		font-size:14px;
+	}
+	.modal-concept span{
+		font-size:10px;
+	}
+	.modal-works{
+		padding-top:20px;
+		font-size:14px;
+	}
+	.modal-works span{
+		font-size:10px;
+	}
+	.modal-flow{
+		padding-top:20px;
+		font-size:14px;
+	}
+	.modal-flow span{
+		font-size:10px;
+	}
+	.modal-contact{
+		padding-top:20px;
+		font-size:14px;
+	}
+	.modal-contact span{
+		font-size:10px;
+	}
+	.sns{
+		position:absolute;
+		top:-5px;
+		right:1%;
+		width:50px;
+	}
+	/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください***********/
+	.openbtn9{
+		  width: 70px;
+	  }
+	  .openbtn9 span{
+		left: 10px;
+	  }
 }
 /************************************************************************************************
 * first
@@ -281,7 +351,25 @@ header{
 	width:100%;
 }
 @media screen and (max-width:480px){
-  
+	.first{
+		height:400px;
+	}
+	.first-main{
+		padding-top:180px;
+		font-size:20px;
+		padding-left:60px;
+	}
+	.slider-pc{
+		display:none;
+	}
+	.slider-sp{
+		display:block;
+		position:absolute;
+		top:0px;
+		right:0px;
+		z-index:50;
+		width:70%;
+	}
 }
 /****************************************************************************************************
 * concept トップページ
@@ -325,7 +413,42 @@ header{
 	opacity:0.7;
 }
 @media screen and (max-width:480px){
-  
+	.concept{
+		margin-top:300px;
+		height:180px;
+	}
+	.concept-img{
+		width:85%;
+		height:250px;
+		position:absolute;
+		top:-160px;
+		right:0px;
+		margin-left:auto;
+		z-index:40;
+	}
+	.concept-content{
+		position:absolute;
+		width:160px;
+		height:150px;
+		background-color:white;
+		left:0px;
+		top:-40px;
+		z-index:50;
+	}
+	.concept-title{
+		font-size:12px;
+		margin-top:40px;
+		margin-left:20px;
+	}
+	.concept-content p{
+		display:none;
+	}
+	.concept-sub-title{
+		font-size:12px;
+		margin-left:50px;
+		margin-top:20px;
+		opacity:0.7;
+	}
 }
 /*************************************************************************************
 * works トップページ
@@ -453,7 +576,73 @@ header{
 	z-index:60;
 }
 @media screen and (max-width:480px){
-  
+	.works{
+		height:1150px;
+	}
+	.works-title{
+		font-size:30px;
+		padding-top:60px;
+	}
+	.works-box1{
+		margin-top:40px;
+		height:180px;
+	}
+	.pc3{
+		width:300px;
+	}
+	.works-box1 p{
+		width:120px;
+		height:120px;
+		top:61px;
+		left:280px;
+		font-size:12px;
+		padding:20px 10px 10px 10px;
+	}
+	.works-box2{
+		margin-top:60px;
+		height:180px;
+	}
+	.pc4{
+		width:300px;
+	}
+	.works-box2 p{
+		width:120px;
+		height:120px;
+		top:61px;
+		left:20px;
+		font-size:12px;
+		padding:20px 10px 10px 10px;
+	}
+	.works-box3{
+		margin-top:80px;
+		height:180px;
+	}
+	.pc2{
+		width:300px;
+	}
+	.works-box3 p{
+		width:120px;
+		height:120px;
+		top:61px;
+		left:280px;
+		font-size:12px;
+		padding:20px 10px 10px 10px;
+	}
+	.works-box4{
+		margin-top:60px;
+		height:180px;
+	}
+	.pc1{
+		width:300px;
+	}
+	.works-box4 p{
+		width:120px;
+		height:120px;
+		top:61px;
+		left:20px;
+		font-size:12px;
+		padding:20px 10px 10px 10px;
+	}  
 }
 /*******************************************************************************************************
 * blog トップページ
@@ -493,7 +682,25 @@ header{
 	font-size:18px;
 }
 @media screen and (max-width:480px){
-  
+	.blog{
+		height:300px;
+	}
+	.blog-title{
+		font-size:30px;
+		margin-top:30px;
+	}
+	.blog-box{
+		margin-top:30px;
+		width:300px;
+		height:120px;
+	}
+	.blog-box p{
+		font-size:12px;
+		padding:10px 10px 10px 10px;
+	}
+	.blog-box p span{
+		font-size:12px;
+	}  
 }
 /***************************************************************************************************
 * footer トップページ
@@ -528,5 +735,26 @@ footer{
 	padding-left:30px;
 }
 @media screen and (max-width:480px){
-  
+	footer{
+		height:300px;
+	}
+	.footer-title{
+		padding-top:80px;
+	}
+	.footer-sns{
+		top:20px;
+		right:20px;
+		width:50px;
+	}
+	.address{
+		padding-top:20px;
+		font-size:12px;
+	}
+	.footer-menu{
+		padding-top:50px;
+		font-size:14px;
+	}
+	.footer-menu span{
+		padding-left:20px;
+	}
 }
