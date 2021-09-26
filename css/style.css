@@ -337,6 +337,51 @@ header{
 	font-weight:bold;
 	z-index:60;
 }
+/*========= 流れるテキスト ===============*/
+/*全共通*/
+.slide-in {
+	overflow: hidden;
+	  display: inline-block;
+  }
+  .slide-in_inner {
+	display: inline-block;
+  }
+  /*左右のアニメーション*/
+  .leftAnime{
+	  opacity: 0;/*事前に透過0にして消しておく*/
+  }
+  .slideAnimeLeftRight {
+	animation-name:slideTextX100;
+	animation-duration:2s;
+	animation-fill-mode:forwards;
+	  opacity: 0;
+  }
+  @keyframes slideTextX100 {
+	from {
+	transform: translateX(-100%); /*要素を左の枠外に移動*/
+		  opacity: 0;
+	}
+	to {
+	transform: translateX(0);/*要素を元の位置に移動*/
+	  opacity: 1;
+	}
+  }
+  .slideAnimeRightLeft {
+	animation-name:slideTextX-100;
+	animation-duration:2s;
+	animation-fill-mode:forwards;
+	  opacity: 0;
+  }
+  @keyframes slideTextX-100 {
+	from {
+	transform: translateX(100%);/*要素を右の枠外に移動*/
+	  opacity: 0;
+	}
+	to {
+	transform: translateX(0);/*要素を元の位置に移動*/
+	  opacity: 1;
+	}
+  }
 .slider-pc{
 	position:absolute;
 	top:0px;
@@ -575,6 +620,23 @@ header{
 	box-shadow: -2px 2px 4px;
 	z-index:60;
 }
+.slideConts {
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+  }
+  .slideContsL {
+	transform: translate(-800px, 0);
+  }
+  .slideContsR {
+	transform: translate(800px, 0);
+  }
+  .slideContsL.show {
+	transform: translate(-50px, 0) !important;
+  }
+  .slideContsR.show {
+	transform: translate(50px, 0) !important;
+  }
 @media screen and (max-width:480px){
 	.works{
 		height:1150px;
