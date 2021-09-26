@@ -268,9 +268,11 @@ header{
 	.modal{
 		width:300px;
 		height:350px;
+		top:-60px;
 	}
 	.modalbtn{
 		font-size:30px;
+		margin-left:-60px;
 	}
 	.modal-title{
 		padding-top:30px;
