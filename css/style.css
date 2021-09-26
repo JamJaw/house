@@ -524,6 +524,8 @@ header{
 .pc3{
 	width:850px;
 	box-shadow: 2px 2px 4px;
+	position:absolute;
+	left:-50px;
 }
 .works-box1 p{
 	width:300px;
@@ -532,7 +534,7 @@ header{
 	margin-left:-50px;
 	position:absolute;
 	top:100px;
-	left:800px;
+	left:750px;
 	text-align: center;
 	font-size:18px;
 	padding-top:100px;
@@ -548,7 +550,7 @@ header{
 .pc4{
 	box-shadow: -2px 2px 4px;
 	position:absolute;
-	right:0px;
+	right:-50px;
 	width:850px;
 	z-index:50;
 	margin-left:auto;
@@ -559,7 +561,7 @@ header{
 	background-color:white;
 	position:absolute;
 	top:100px;
-	left:300px;
+	left:350px;
 	text-align: center;
 	font-size:18px;
 	padding-top:100px;
@@ -577,6 +579,8 @@ header{
 .pc2{
 	width:850px;
 	box-shadow: 2px 2px 4px;
+	position:absolute;
+	left:-50px;
 }
 .works-box3 p{
 	width:300px;
@@ -585,7 +589,7 @@ header{
 	margin-left:-50px;
 	position:absolute;
 	top:100px;
-	left:800px;
+	left:750px;
 	text-align: center;
 	font-size:18px;
 	padding-top:100px;
@@ -601,7 +605,7 @@ header{
 .pc1{
 	box-shadow: -2px 2px 4px;
 	position:absolute;
-	right:0px;
+	right:-50px;
 	width:850px;
 	z-index:50;
 	margin-left:auto;
@@ -612,7 +616,7 @@ header{
 	background-color:white;
 	position:absolute;
 	top:100px;
-	left:300px;
+	left:350px;
 	text-align: center;
 	font-size:18px;
 	padding-top:100px;
@@ -626,10 +630,10 @@ header{
 	transition: .5s;
   }
   .slideContsL {
-	transform: translate(-800px, 0);
+	transform: translate(-200px, 0);
   }
   .slideContsR {
-	transform: translate(800px, 0);
+	transform: translate(200px, 0);
   }
   .slideContsL.show {
 	transform: translate(-50px, 0) !important;
@@ -650,13 +654,13 @@ header{
 		height:180px;
 	}
 	.pc3{
-		width:300px;
+		width:280px;
 	}
 	.works-box1 p{
 		width:120px;
 		height:120px;
 		top:61px;
-		left:280px;
+		left:230px;
 		font-size:12px;
 		padding:20px 10px 10px 10px;
 	}
@@ -665,13 +669,13 @@ header{
 		height:180px;
 	}
 	.pc4{
-		width:300px;
+		width:280px;
 	}
 	.works-box2 p{
 		width:120px;
 		height:120px;
 		top:61px;
-		left:20px;
+		left:70px;
 		font-size:12px;
 		padding:20px 10px 10px 10px;
 	}
@@ -680,13 +684,13 @@ header{
 		height:180px;
 	}
 	.pc2{
-		width:300px;
+		width:280px;
 	}
 	.works-box3 p{
 		width:120px;
 		height:120px;
 		top:61px;
-		left:280px;
+		left:230px;
 		font-size:12px;
 		padding:20px 10px 10px 10px;
 	}
@@ -695,16 +699,22 @@ header{
 		height:180px;
 	}
 	.pc1{
-		width:300px;
+		width:280px;
 	}
 	.works-box4 p{
 		width:120px;
 		height:120px;
 		top:61px;
-		left:20px;
+		left:70px;
 		font-size:12px;
 		padding:20px 10px 10px 10px;
-	}  
+	}
+	.slideContsL {
+		transform: translate(-70px, 0);
+	}
+	.slideContsR {
+		transform: translate(70px, 0);
+	}
 }
 /*******************************************************************************************************
 * blog トップページ
