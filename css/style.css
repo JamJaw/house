@@ -98,7 +98,7 @@ header{
 }
 .modal{
 	position:relative;
-	top:-51px;
+	top:-70px;
 	background-color:black;
 	width:400px;
 	height:500px;
@@ -111,8 +111,8 @@ header{
 	color:white;
 	font-size:40px;
 	font-weight:bold;
-	padding-top:30px;
-	padding-left:50px;
+	padding-top:15px;
+	padding-left:95px;
 	cursor:pointer;
 }
 
